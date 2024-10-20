@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <title>Pemahaman Infrastruktur Internet</title>
+    <title>Pemrograman Web</title>
   </head>
   <body>
     <nav>
@@ -19,7 +19,7 @@
         <li>
           <a>Content</a>
           <div class="dropdown">
-            <button><a class="internet" href="#internet">Internet</a></button>
+            <button><a href="#internet">Internet</a></button>
             <button><a href="#https">Http & Https</a></button>
             <button><a href="#domain">Domain</a></button>
             <button><a href="#hosting">Hosting</a></button>
@@ -36,16 +36,247 @@
       </h1>
     </div>
 
-    <div id="internet" class="internet"></div>
+    <div id="internet" class="internet">
+      <h2>Apa itu internet?</h2>
+      <p>
+        Internet adalah kumpulan besar jaringan yang saling terhubung melalui
+        kabel atau perangkat jarak jauh. Jika Anda ingin melihatnya dalam
+        istilah yang lebih sederhana, Anda dapat mengatakan bahwa kata
+        "internet" berfungsi sebagai versi singkat dari "jaringan yang saling
+        terhubung".
+      </p>
+      <h2>Infrastruktur jaringan: Bagaimana internet dibangun secara fisik?</h2>
+      <p>
+        Untuk membangun jaringan internet, setidaknya diperlukan dua komputer
+        yang bisa saling terhubung. Koneksi ini dapat dilakukan melalui dua
+        metode utama: menggunakan kabel Ethernet (koneksi fisik) atau
+        menggunakan perangkat nirkabel seperti Wi-Fi.
+      </p>
+      <p>
+        Jika ingin memperluas jaringan ke lebih dari dua komputer, diperlukan
+        tambahan kabel Ethernet atau router. Router adalah perangkat yang
+        bertugas mengatur lalu lintas data di jaringan, baik itu antar jaringan
+        atau di dalam jaringan yang sama. Router ini bekerja dengan mengarahkan
+        paket data ke perangkat tujuan menggunakan alamat IP, sehingga
+        memastikan data sampai ke perangkat yang tepat.
+      </p>
+      <p>
+        Menghubungkan komputer melalui router nirkabel lebih praktis
+        dibandingkan menggunakan kabel. Namun, untuk mencakup miliaran perangkat
+        di seluruh dunia, satu router tidak cukup. Router bisa saling terhubung,
+        tetapi untuk koneksi global, dibutuhkan modem. Modem mengubah data
+        digital dari jaringan komputer menjadi sinyal yang bisa ditransmisikan
+        melalui saluran telepon, serat optik, atau satelit. Modem kemudian
+        mengirimkan data tersebut ke penyedia layanan internet (ISP), yang
+        meneruskannya ke server web. Server memproses permintaan dan mengirim
+        kembali data melalui jaringan hingga informasi tersebut muncul di layar
+        komputer Anda, memungkinkan akses internet.
+      </p>
+      <p>
+        Sumber:
+        <a
+          href="https://nordvpn.com/blog/how-does-the-internet-work/"
+          target="_blank"
+          >NordVPN</a
+        >
+      </p>
+    </div>
 
-    <div id="https" class="https"></div>
+    <div id="https" class="https">
+      <h2>Definisi dan cara kerja HTTP dan HTTPS</h2>
+      <p>
+        Hypertext Transfer Protocol (HTTP) adalah protokol aplikasi jaringan
+        yang digunakan untuk mendistribusikan informasi antara server web dan
+        klien. Server dalam konteks ini adalah web server, yaitu komputer yang
+        memiliki kapasitas penyimpanan data besar untuk menyimpan dan mengelola
+        konten web. Klien merujuk pada web browser yang mengakses, menerima, dan
+        menampilkan konten dari server.
+      </p>
+      <p>
+        Hypertext Transfer Protocol Secure (HTTPS) adalah versi lebih aman dari
+        HTTP yang mengimplementasikan protokol keamanan SSL/TLS untuk melindungi
+        data selama proses transfer. HTTPS mengenkripsi dan memvalidasi data
+        yang dikirim antara server dan klien, memberikan tingkat keamanan
+        tambahan yang membuat pengguna merasa lebih aman saat mengakses berbagai
+        konten web. Untuk menggunakan HTTPS dan mengamankan domain, diperlukan
+        sertifikat SSL/TLS.
+      </p>
+      <p>
+        Cara Kerja Protokol HTTP: HTTP adalah protokol lapisan aplikasi dalam
+        model komunikasi jaringan Interkoneksi Sistem Terbuka (OSI). Protokol
+        ini menentukan beberapa jenis permintaan dan respons. Misalnya, ketika
+        Anda ingin melihat beberapa data dari situs web, Anda mengirim
+        permintaan HTTP GET. Jika Anda ingin mengirim beberapa informasi,
+        seperti mengisi formulir kontak, Anda mengirim permintaan HTTP PUT.
+        Server mengirimkan berbagai jenis respons HTTP dalam bentuk kode angka
+        dan data. Berikut beberapa contohnya:
+      </p>
+      <ul>
+        <li>200 - OK</li>
+        <li>400 - Bad request</li>
+        <li>404 - Resource not found</li>
+      </ul>
+      <p>
+        Komunikasi permintaan-respons ini biasanya tidak terlihat oleh pengguna.
+        Metode komunikasi inilah yang digunakan oleh peramban dan server web
+        sehingga World Wide Web bekerja secara konsisten untuk semua orang.
+      </p>
+      <p>
+        Cara Kerja Protokol HTTPS: HTTPS adalah versi aman dari HTTP yang
+        menggunakan SSL/TLS. Ketika mengunjungi situs HTTPS, browser
+        memverifikasi sertifikat SSL server. Setelah menerima kunci publik,
+        browser mengenkripsi pesan, dan server mendeskripsinya dengan kunci
+        privat. Ini memastikan data yang ditransmisikan aman dari pihak ketiga.
+      </p>
+      <p>
+        Secara keseluruhan, HTTP memungkinkan pertukaran data, sementara HTTPS
+        menambah lapisan keamanan untuk melindungi informasi.
+      </p>
+      <p>
+        Sumber:
+        <a
+          href="https://aws.amazon.com/id/compare/the-difference-between-https-and-http/"
+          target="_blank"
+          >AWS</a
+        >,
+        <a
+          href="https://www.hostinger.co.id/tutorial/perbedaan-http-dan-https"
+          target="_blank"
+          >Hostinger</a
+        >
+      </p>
+    </div>
 
-    <div id="domain" class="domain"></div>
+    <div id="domain" class="domain">
+      <h2>Definisi Nama Domain</h2>
+      <p>
+        Nama domain adalah alamat yang digunakan untuk mengidentifikasi situs
+        web di internet. Nama domain terdiri dari dua bagian utama: nama itu
+        sendiri dan ekstensi atau TLD (Top-Level Domain), seperti .com, .org,
+        atau .net. Nama domain membuatnya lebih mudah bagi pengguna untuk
+        mengingat alamat situs dibandingkan dengan alamat IP yang terdiri dari
+        angka. Nama domain dikelola oleh registrar domain, yang mengatur
+        pendaftaran dan kepemilikan nama tersebut.
+      </p>
+      <h2>Cara Kerja Nama Domain</h2>
+      <p>
+        Cara kerja nama domain dimulai ketika pengguna mengetikkan nama domain
+        di browser. Permintaan ini akan dikirim ke server DNS, yang berfungsi
+        untuk menerjemahkan nama domain menjadi alamat IP yang sesuai. Setelah
+        alamat IP ditemukan, browser mengirimkan permintaan ke server yang
+        menyimpan situs web, dan server akan mengembalikan konten situs tersebut
+        kepada browser. Dengan demikian, nama domain berfungsi sebagai jembatan
+        yang menghubungkan pengguna dengan informasi yang mereka cari di
+        internet.
+      </p>
+      <p>
+        Sumber:
+        <a
+          href="https://www.godaddy.com/garage/what-is-a-domain-name/"
+          target="_blank"
+          >GoDaddy</a
+        >
+      </p>
+    </div>
 
-    <div id="hosting" class="hosting"></div>
+    <div id="hosting" class="hosting">
+      <h2>Definisi Hosting</h2>
+      <p>
+        Hosting adalah layanan yang memungkinkan individu atau organisasi untuk
+        mempublikasikan situs web mereka di internet. Penyedia layanan hosting
+        menyewakan ruang di server untuk menyimpan file situs web, termasuk
+        halaman HTML, gambar, dan skrip. Terdapat berbagai jenis hosting,
+        seperti shared hosting, VPS (Virtual Private Server), dan dedicated
+        hosting, yang menawarkan berbagai tingkat kinerja dan kontrol. Setelah
+        situs web dibuat, file-file tersebut diunggah ke server hosting melalui
+        protokol FTP atau panel kontrol yang disediakan oleh penyedia hosting.
+      </p>
+      <h2>Cara Kerja Hosting</h2>
+      <p>
+        Cara kerja hosting dimulai ketika pengguna mengakses situs web dengan
+        mengetikkan nama domain di browser. Permintaan ini diarahkan ke server
+        hosting yang menyimpan file situs web tersebut. Server hosting menerima
+        permintaan dan mengirimkan file yang diperlukan kepada browser, yang
+        kemudian merender dan menampilkan halaman web kepada pengguna. Dengan
+        layanan hosting, situs web dapat diakses oleh pengguna di seluruh dunia,
+        memungkinkan individu dan organisasi untuk mempublikasikan informasi dan
+        konten secara online.
+      </p>
+      <p>
+        Sumber:
+        <a
+          href="https://www.hostinger.com/tutorials/what-is-web-hosting"
+          target="_blank"
+          >Hostinger</a
+        >
+      </p>
+    </div>
 
-    <div id="dns" class="dns"></div>
+    <div id="dns" class="dns">
+      <h2>Definisi DNS</h2>
+      <p>
+        DNS (Domain Name System) adalah sistem yang menerjemahkan nama domain
+        menjadi alamat IP, yang merupakan angka unik yang digunakan untuk
+        mengidentifikasi perangkat di jaringan. DNS berfungsi sebagai buku
+        telepon untuk internet, menghubungkan nama domain dengan alamat IP yang
+        dapat dibaca oleh komputer. Setiap kali pengguna mengetikkan nama domain
+        di browser, permintaan dikirim ke server DNS untuk menemukan alamat IP
+        yang sesuai. Server DNS kemudian mencari database-nya untuk menemukan
+        alamat IP yang terkait dengan nama domain tersebut dan mengembalikannya
+        kepada browser.
+      </p>
+      <h2>Cara Kerja DNS</h2>
+      <p>
+        Cara kerja DNS dimulai ketika pengguna menginput nama domain di browser.
+        Permintaan ini dikirimkan ke server DNS resolver, yang kemudian mencari
+        informasi pada DNS root nameserver dan authoritative nameserver hingga
+        menemukan alamat IP yang tepat. Setelah alamat IP ditemukan, browser
+        menggunakan informasi ini untuk menghubungi server yang menyimpan situs
+        web tersebut dan mengambil kontennya. Proses ini berlangsung dengan
+        cepat, sehingga pengguna dapat mengakses situs web yang mereka inginkan
+        tanpa mengalami kendala.
+      </p>
+      <p>
+        Sumber:
+        <a
+          href="https://www.cloudflare.com/learning/dns/what-is-dns/"
+          target="_blank"
+          >Cloudflare</a
+        >
+      </p>
+    </div>
 
-    <div id="browser" class="browser"></div>
+    <div id="browser" class="browser">
+      <h2>Definisi Browser</h2>
+      <p>
+        Browser adalah perangkat lunak yang memungkinkan pengguna untuk
+        mengakses dan menjelajahi informasi di internet, seperti Google Chrome,
+        Mozilla Firefox, dan Microsoft Edge. Browser berfungsi untuk menampilkan
+        halaman web yang diambil dari server. Ketika pengguna memasukkan URL
+        atau nama domain, browser akan mengirimkan permintaan HTTP atau HTTPS ke
+        server yang menyimpan situs tersebut. Setelah server menerima
+        permintaan, ia mengembalikan halaman web dalam format HTML, CSS, dan
+        JavaScript.
+      </p>
+      <h2>Cara Kerja Browser</h2>
+      <p>
+        Cara kerja browser dimulai dengan pengguna mengetikkan URL atau nama
+        domain di bilah alamat. Browser kemudian mengirimkan permintaan ke
+        server web yang relevan dan menerima respons dari server. Setelah
+        mendapatkan respons, browser merender halaman web, memformat konten agar
+        dapat ditampilkan dengan baik, dan menampilkannya kepada pengguna.
+        Selain itu, browser memiliki fitur tambahan seperti bookmark, riwayat
+        penjelajahan, dan pengelolaan tab untuk meningkatkan pengalaman pengguna
+        saat menjelajahi internet.
+      </p>
+      <p>
+        Sumber:
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work"
+          target="_blank"
+          >MDN Web Docs</a
+        >
+      </p>
+    </div>
   </body>
 </html>

@@ -97,28 +97,192 @@ h1 {
 }
 
 .internet {
-  height: 100vh;
+  height: auto;
   background-color: rgb(28, 45, 61, 1);
+  color: white;
+  padding: 2rem 6rem;
+  padding-top: calc(2rem + 70px);
+}
+
+.internet h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.internet p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.internet a {
+  color: rgb(0, 102, 204);
+  text-decoration: none;
+}
+
+.internet a:hover {
+  text-decoration: underline;
 }
 
 .https {
+  height: auto;
   background-color: rgb(255, 255, 255);
-  height: 100vh;
+  color: rgb(28, 45, 61);
+  padding: 2rem 6rem;
+  padding-top: calc(2rem + 70px);
+}
+
+.https h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgb(28, 45, 61);
+}
+
+.https p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.https ul {
+  margin-left: 1.5rem;
+}
+
+.https ul li {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.https a {
+  color: rgb(0, 102, 204);
+  text-decoration: none;
+}
+
+.https a:hover {
+  text-decoration: underline;
 }
 
 .domain {
   height: 100vh;
   background-color: rgb(28, 45, 61, 1);
+  color: rgb(255, 255, 255);
+  padding: 2rem 6rem;
+  padding-top: calc(2rem + 70px);
+  text-align: left;
 }
+
+.domain h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.domain p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.domain a {
+  color: rgb(0, 102, 204);
+  text-decoration: none;
+}
+
+.domain a:hover {
+  text-decoration: underline;
+}
+
 .hosting {
   height: 100vh;
   background-color: rgb(255, 255, 255);
+  color: rgb(28, 45, 61);
+  padding: 2rem 6rem;
+  padding-top: calc(2rem + 70px);
+  text-align: left;
 }
+
+.hosting h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: rgb(28, 45, 61);
+  border-bottom: 2px solid rgb(28, 45, 61);
+}
+
+.hosting p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hosting a {
+  color: rgb(0, 102, 204);
+  text-decoration: none;
+}
+
+.hosting a:hover {
+  text-decoration: underline;
+}
+
 .dns {
   height: 100vh;
   background-color: rgb(28, 45, 61, 1);
+  color: rgb(255, 255, 255);
+  padding: 2rem 6rem;
+  padding-top: calc(2rem + 70px);
+  text-align: left;
 }
+
+.dns h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.dns p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.dns a {
+  color: rgb(0, 102, 204);
+  text-decoration: none;
+}
+
+.dns a:hover {
+  text-decoration: underline;
+}
+
 .browser {
   height: 100vh;
   background-color: rgb(255, 255, 255);
+  color: rgb(28, 45, 61);
+  padding: 2rem 6rem;
+  padding-top: calc(2rem + 70px);
+  text-align: left;
+}
+
+.browser h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: rgb(28, 45, 61);
+  border-bottom: 2px solid rgb(28, 45, 61);
+}
+
+.browser p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.browser a {
+  color: rgb(0, 102, 204);
+  text-decoration: none;
+}
+
+.browser a:hover {
+  text-decoration: underline;
 }
