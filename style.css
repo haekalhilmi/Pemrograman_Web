@@ -97,7 +97,7 @@ h1 {
 }
 
 .internet {
-  height: auto;
+  height: 100vh;
   background-color: rgb(28, 45, 61, 1);
   color: white;
   padding: 2rem 6rem;
