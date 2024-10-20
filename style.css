@@ -9,21 +9,58 @@ nav {
   left: 0;
   width: 100%;
   height: 70px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6rem;
+  padding: 0 6rem 0 6rem 0;
   background: rgb(28, 45, 61, 0.9);
   z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  margin-left: 6rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul {
+  margin-right: 6rem;
   display: flex;
   list-style: none;
 }
+
 nav ul li {
-  margin-right: 30px;
+  position: relative;
+  margin-left: 50px;
+  padding: 23.5px 0 23.5px 0;
 }
+
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -20%;
+  background-color: rgb(28, 45, 61, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown button {
+  display: block;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
 nav ul li a {
   text-decoration: none;
   color: white;
