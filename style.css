@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Source Code Pro;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+  background: rgb(28, 45, 61, 0.9);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.home {
+  background-image: url(img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(28, 45, 61, 1) 8%,
+    rgb(255, 255, 255, 0) 50%
+  );
+}
+
+h1 {
+  color: #ffff;
+  font-size: 42px;
+  margin-left: 6rem;
+}
+
+.internet {
+  height: 100vh;
+  background-color: rgb(28, 45, 61, 1);
+}
+
+.https {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+.domain {
+  height: 100vh;
+  background-color: rgb(28, 45, 61, 1);
+}
+.hosting {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+.dns {
+  height: 100vh;
+  background-color: rgb(28, 45, 61, 1);
+}
+.browser {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
